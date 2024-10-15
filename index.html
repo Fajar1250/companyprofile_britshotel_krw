@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brits Hotel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            perspective: 1000px; /* Perspective for 3D effect */
+        }
+        .hero-section {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-text {
+            position: relative;
+            padding: 300px;
+            border-radius: 800px;
+            background: url('background.jpg') no-repeat center center/cover; /* Background image for the text */
+            background-size: cover;
+            color: white; /* Adjust text color if needed */
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .card {
+            transition: transform 0.2s, box-shadow 0.2s;
+            transform-style: preserve-3d; /* Preserve 3D */
+        }
+        .card:hover {
+            transform: rotateY(10deg) rotateX(5deg) scale(1.05); /* 3D rotation */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .gallery img {
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="logobrits.jpg" alt="Brits Hotel Logo" style="height: 100px;"> <!-- Replace 'path/to/your/logo.png' with your actual logo path -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Welcome to Brits Hotel</h1>
+                <p>Your comfort is our priority.</p>
+                <a href="#rooms" class="btn btn-primary mt-4">Explore Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p class="lead">
+                Terletak di pusat bisnis Karawang Barat, Brits Hotel Karawang menawarkan kenyamanan bintang 4 dengan sentuhan elegan. Dengan 150 kamar luas, hotel ini memberikan pilihan mulai dari Superior hingga Suite Room, semuanya dilengkapi kasur nyaman, linen halus, dan kamar mandi marmer mewah. 
+            </p>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <!-- Rooms Section -->
+<section id="rooms" class="py-5">
+    <div class="container text-center">
+        <h2>Our Rooms</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="standard.jpg" class="card-img-top" alt="Standard Twin Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Twin</h5>
+                        <p class="card-text">Spacious room with modern amenities and a stunning view.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="standardking.jpg" class="card-img-top" alt="Suite Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard King</h5>
+                        <p class="card-text">Luxurious suite with additional living area and premium facilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="superiorhollywood.jpg" class="card-img-top" alt="Superior Hollywood">
+                    <div class="card-body">
+                        <h5 class="card-title">Superior Hollywood</h5>
+                        <p class="card-text">Exclusive suite offering ultimate luxury and personalized service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="superiortwin.jpg" class="card-img-top" alt="Deluxe Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Superior Twin</h5>
+                        <p class="card-text">Elegant room with modern design and comfortable bedding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="superiorking.jpg" class="card-img-top" alt="Executive Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Superior King</h5>
+                        <p class="card-text">Spacious executive room with luxurious amenities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="deluxeking.jpg" class="card-img-top" alt="Family Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe King</h5>
+                        <p class="card-text">Perfect choice for families with connecting rooms and extra space.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="businessking.jpg" class="card-img-top" alt="Honeymoon Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Business King</h5>
+                        <p class="card-text">Romantic suite with special decorations and premium services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="businesstwin.jpg" class="card-img-top" alt="Presidential Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Business King</h5>
+                        <p class="card-text">The epitome of luxury with a spacious layout and exclusive amenities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="suite.jpg" class="card-img-top" alt="Junior Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Suite</h5>
+                        <p class="card-text">Comfortable suite with a separate seating area and work desk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Facilities</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-swimmer fa-3x mb-3"></i>
+                    <h4>Infinity Pool</h4>
+                    <p>Relax and unwind in our stunning infinity pool with breathtaking views.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-spa fa-3x mb-3"></i>
+                    <h4>Luxury Spa</h4>
+                    <p>Pamper yourself with world-class spa treatments in our luxury spa.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-utensils fa-3x mb-3"></i>
+                    <h4>Gourmet Dining</h4>
+                    <p>Indulge in a fine dining experience with an exquisite selection of dishes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-5">
+    <div class="container text-center">
+        <h2>Gallery</h2>
+        <div class="row gallery">
+            <div class="col-md-4">
+                <img src="bbq.jpg" class="img-fluid mb-4" alt="Gallery Image 1">
+            </div>
+            <div class="col-md-4">
+                <img src="wedding.jpg" class="img-fluid mb-4" alt="Gallery Image 2">
+            </div>
+            <div class="col-md-4">
+                <img src="ballroom.jpg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="gedung.jpg" class="img-fluid mb-4" alt="Gallery Image 4">
+            </div>
+            <div class="col-md-4">
+                <img src="kolamrenang.webp" class="img-fluid mb-4" alt="Gallery Image 5">
+            </div>
+            <div class="col-md-4">
+                <img src="gedung2.jpg" class="img-fluid mb-4" alt="Gallery Image 6">
+            </div>
+            <div class="col-md-4">
+                <img src="ruangpertemuan.jpg" class="img-fluid mb-4" alt="Gallery Image 7">
+            </div>
+            <div class="col-md-4">
+                <img src="lobby.jpg" class="img-fluid mb-4" alt="Gallery Image 8">
+            </div>
+            <div class="col-md-4">
+                <img src="resto.jpg" class="img-fluid mb-4" alt="Gallery Image 9">
+            </div>
+            <div class="col-md-4">
+                <img src="pemandangankolam.jpg" class="img-fluid mb-4" alt="Gallery Image 10">
+            </div>
+            <div class="col-md-4">
+                <img src="lobby2.jpg" class="img-fluid mb-4" alt="Gallery Image 11">
+            </div>
+            <div class="col-md-4">
+                <img src="nuansajepang.jpg" class="img-fluid mb-4" alt="Gallery Image 12">
+            </div>
+            <div class="col-md-4">
+                <img src="spa.jpg" class="img-fluid mb-4" alt="Gallery Image 13">
+            </div>
+            <div class="col-md-4">
+                <img src="lemarigym.webp" class="img-fluid mb-4" alt="Gallery Image 14">
+            </div>
+            <div class="col-md-4">
+                <img src="gym.webp" class="img-fluid mb-4" alt="Gallery Image 15">
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p class="lead">Get in touch for bookings and inquiries.</p>
+            <ul class="list-unstyled">
+                <li><strong>Phone:</strong> 089648234227</li>
+                <li><strong>Email:</strong> britskrw@example.com</li>
+                <li><strong>Address:</strong> Karawang, Jawa Barat</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 ComfortStay Hotel. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper
